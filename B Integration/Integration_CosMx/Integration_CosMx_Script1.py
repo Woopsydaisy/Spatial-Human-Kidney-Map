@@ -86,7 +86,7 @@ adata_annotated.obs["percent_mt"]=0
 adata_annotated.obs["proj"]='CosMx_Susztak'
 adata_annotated.obs['orig_ident']=adata_annotated.obs['sample'].copy()
 
-sn=sc.read_h5ad('/home/bcd/revision_nature/integration_new_atlas/Human_extended_annotated_subset.h5ad')
+sn=sc.read_h5ad('/home/bcd/revision_nature/integration_new_atlas/Human_extended_annotated.h5ad')
 print(sn)
 sn.obs['annotation_final_level1']=sn.obs['annotation'].copy()
 sn.obs['annotation_final_level1']=sn.obs['annotation_final_level1'].replace('DCT_CNT_PC', 'DCT_CNT_CD')
