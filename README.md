@@ -164,7 +164,7 @@
   Infers 20um neighborhood for each ME.  
   *Container used:* `docker://10jll/spatial:version2`
 
-- **Tubular_ME_Script4_Kmeans.py**  
+- **Tubular_ME_Script4_cellphoneDB.py**  
   Calculates ligand-receptor interactions using imputed expression.  
   *Container used:* `docker://10jll/cellphonedb:version1`
 
