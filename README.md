@@ -232,3 +232,26 @@
   Visualizes cell neighborhoods and compares immune cell fractions between glomerular and tubular immune MEs.  
   *Container used:* `docker://10jll/spatial:version2`
 
+## J. B Cell Atlas
+
+- **Script1_prepare_SC.py**  
+  Prepares SC data.  
+  *Container used:* `docker://10jll/spatial:version2`
+
+- **Script2_integration_SC.py**  
+  Integrating SC data.  
+  *Container used:* `docker://10jll/scvi_cuda12:version4`
+
+- **Script3_add_Xenium.py**  
+  B and plasma cells extracted from Xenium 5k dataset are concatenated with the SC data.  
+  *Container used:* `docker://10jll/spatial:version2`
+
+- **Script4_integration_Xenium_SC.py**  
+  Integrating Xenium and SC using SCVI and SCANVI.  
+  *Container used:* `docker://10jll/scvi_cuda12:version4`
+
+- **Script5_annotation.py**  
+  Annotation of B cell subsets.  
+  *Container used:* `docker://10jll/spatial:version2`
+
+## K. Miscellaneous 
